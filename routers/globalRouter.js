@@ -1,8 +1,10 @@
 import express from "express";
+import routes from "../routes";
+import { home } from "../controllers/globalController";
 
 const globalRouter = express.Router();
 
-globalRouter.get("/", (req, res) => res.send("Home"));
-globalRouter.get("/login", (req, res) => res.send("Login"));
+globalRouter.get(routes.home, home);
+globalRouter.get(routes.login);
 
 export default globalRouter;
