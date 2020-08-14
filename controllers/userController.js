@@ -1,3 +1,6 @@
-export const userDetail = (req, res) => res.render("userDetail");
-export const editProfile = (req, res) => res.send("Edit User");
-export const changePassword = (req, res) => res.send("Change Password");
+export const userDetail = (req, res) =>
+  res.render("userDetail", { pageTitle: "Profile" });
+export const editProfile = (req, res) =>
+  res.render("editProfile", { pageTitle: "Edit Profile" });
+export const changePassword = (req, res) =>
+  res.render("Change Password", { pageTitle: "Change Password" });
