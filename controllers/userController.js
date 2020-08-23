@@ -3,4 +3,4 @@ export const userDetail = (req, res) =>
 export const editProfile = (req, res) =>
   res.render("editProfile", { pageTitle: "Edit Profile" });
 export const changePassword = (req, res) =>
-  res.render("Change Password", { pageTitle: "Change Password" });
+  res.render("changePassword", { pageTitle: "Change Password" });
