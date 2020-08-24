@@ -3,4 +3,11 @@ extends layout/main
 block content  
     h1=pageTitle
     .videos
-        
+        each video in videos
+            video(src=video.fileUrl)
+            h1=video.title
+            h5=video.description
+            span=video.views
+
+
+
